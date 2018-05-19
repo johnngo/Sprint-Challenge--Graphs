@@ -45,6 +45,12 @@ class Graph {
    */
   findVertex(value) {
     // !!! IMPLEMENT ME
+    const foundVertex = this.vertexes.find(function() {
+      return vertex.value === value;
+    });
+
+    if (foundVertex) return foundVertex;
+    return null;
   }
 
   /**
